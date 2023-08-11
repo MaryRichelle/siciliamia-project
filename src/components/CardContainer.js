@@ -1,4 +1,3 @@
-import { Property } from "csstype";
 import styled from "styled-components";
 
 const MaskGroupIcon = styled.img`

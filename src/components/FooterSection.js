@@ -1,4 +1,3 @@
-import { Property } from "csstype";
 import styled from "styled-components";
 
 const LosAngeles = styled.b`
@@ -88,6 +87,8 @@ const FooterSection = ({
   mapPinIconTop,
   propLeft,
 }) => {
+
+
   return (
     <DealRoot
       losAngelesLeft={losAngelesLeft}
