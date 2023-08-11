@@ -76,31 +76,29 @@ const DealRoot = styled.div`position: absolute;
   left: ${(p) => p.losAngelesLeft}
   background-image: ${(p) => p.losAngelesBackgroundImage}
 `;
-const FooterSection = ({
-  losAngeles,
-  losAngeles1,
-  losAngeles2,
-  mapPin,
-  phoneCall,
+const FooterSection1 = ({
+  restaurantName,
+  address,
+  phoneNumber,
+  locationCode,
+  venueDimensions,
   losAngelesLeft,
   losAngelesBackgroundImage,
   mapPinIconTop,
   propLeft,
 }) => {
-
-
   return (
     <DealRoot
       losAngelesLeft={losAngelesLeft}
       losAngelesBackgroundImage={losAngelesBackgroundImage}
     >
-      <LosAngeles mapPinIconTop={mapPinIconTop}>{losAngeles}</LosAngeles>
-      <LosAngeles1>{losAngeles1}</LosAngeles1>
-      <LosAngeles2>{losAngeles2}</LosAngeles2>
-      <MapPinIcon alt="" src={mapPin} propLeft={propLeft} />
-      <PhoneCallIcon alt="" src={phoneCall} />
+      <LosAngeles mapPinIconTop={mapPinIconTop}>{restaurantName}</LosAngeles>
+      <LosAngeles1>{address}</LosAngeles1>
+      <LosAngeles2>{phoneNumber}</LosAngeles2>
+      <MapPinIcon alt="" src={locationCode} propLeft={propLeft} />
+      <PhoneCallIcon alt="" src={venueDimensions} />
     </DealRoot>
   );
 };
 
-export default FooterSection;
+export default FooterSection1;
