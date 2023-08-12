@@ -28,6 +28,7 @@ const SicilysTunaFishingContainer = () => {
   return (
     <SicilysTunaFishingContainerRoot>
       <SicilysTunaFishingContainer1>
+        <p>ya</p>
         <SicilysTunaFishing>{`Sicily’s Tuna Fishing Tradition `}</SicilysTunaFishing>
         <OnDisplayAt>on Display at the Tonnara di Favignana</OnDisplayAt>
       </SicilysTunaFishingContainer1>

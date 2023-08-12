@@ -86,7 +86,7 @@ const Deal = styled.div`
   border-radius: 4.64px;
   width: 13.73rem;
   height: 14.85rem;
-  background-image: url("/public/deal2@3x.png");
+  background-image: url("/deal2@3x.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -168,6 +168,7 @@ const PopularExperiences = () => {
       </Deal>
       <ViewAll>
         <ViewAll1>View all</ViewAll1>
+        
         <ViewAllChild alt="" src="/vector-1.svg" />
       </ViewAll>
       <MapsicleMapIcon alt="" src="/mapsicle-map@2x.png" />

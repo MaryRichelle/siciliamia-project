@@ -240,7 +240,7 @@ const TopAttra = () => {
         <LosAngeles>Mount Etna</LosAngeles>
       </Deal>
       <VectorParent>
-        <VectorIcon alt="" src="/vector5.svg" />
+        <VectorIcon alt="" src="./vector5.svg" />
         <FrameChild />
         <StartingTomorrow>Starting tomorrow</StartingTomorrow>
       </VectorParent>
@@ -259,10 +259,10 @@ const TopAttra = () => {
       <ViewAll>
         <ViewAll1>
           <ViewAll2>View all</ViewAll2>
-          <ViewAllChild alt="" src="/vector-1.svg" />
+          <ViewAllChild alt="" src="./vector-1.svg" />
         </ViewAll1>
       </ViewAll>
-      <DividerIcon alt="" src="/divider1.svg" />
+      <DividerIcon alt="" src="./divider1.svg" />
     </TopAttraRoot>
   );
 };

@@ -65,7 +65,7 @@ const DealRoot = styled.div`position: absolute;
   border-radius: 4.64px;
   width: 13.75rem;
   height: 14.88rem;
-  background-image: url("/public/deal@3x.png");
+  background-image: url("/deal@3x.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
