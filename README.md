@@ -1,10 +1,7 @@
 
-  # siciliamia
+  # siciliamia 
 
-  Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">nodejs</a></code>
+  ## you can preview this project hare [siciliamia fishing](https://sicilia-mia-fisihing.netlify.app/) 
 
-  To preview and run the project on your device:
-  1) Open project folder in <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
-  2) In the terminal, run `npm install`
-  3) Run `npm start` to view project in browser
+  This project was developed using **[*locofy*](https://www.locofy.ai/)** its a ***Figma*** plugin and   AI tool generate code for frontend developers
   

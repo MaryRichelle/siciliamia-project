@@ -3,7 +3,6 @@ import styled from "styled-components";
 const TopAttractionIn = styled.b`
   position: absolute;
   height: 6.68%;
-  width: 28.8%;
   top: 0%;
   left: 35.64%;
   font-size: var(--font-size-17xl);
@@ -38,7 +37,7 @@ const Deal = styled.div`
   box-sizing: border-box;
   align-items: flex-start;
   justify-content: flex-end;
-  background-image: url("/public/deal3@3x.png");
+  background-image: url("/deal3@3x.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -100,7 +99,7 @@ const Deal1 = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("/public/deal4@3x.png");
+  background-image: url("/deal4@3x.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -128,7 +127,7 @@ const Deal2 = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("/public/deal5@3x.png");
+  background-image: url("/deal5@3x.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -156,7 +155,7 @@ const Deal3 = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("/public/deal6@3x.png");
+  background-image: url("/deal6@3x.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -172,7 +171,7 @@ const Deal4 = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("/public/deal6@3x.png");
+  background-image: url("/deal6@3x.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -240,7 +239,7 @@ const TopAttra = () => {
         <LosAngeles>Mount Etna</LosAngeles>
       </Deal>
       <VectorParent>
-        <VectorIcon alt="" src="./vector5.svg" />
+        <VectorIcon alt="" src="/vector5.svg" />
         <FrameChild />
         <StartingTomorrow>Starting tomorrow</StartingTomorrow>
       </VectorParent>
@@ -259,10 +258,10 @@ const TopAttra = () => {
       <ViewAll>
         <ViewAll1>
           <ViewAll2>View all</ViewAll2>
-          <ViewAllChild alt="" src="./vector-1.svg" />
+          <ViewAllChild alt="" src="/vector-1.svg" />
         </ViewAll1>
       </ViewAll>
-      <DividerIcon alt="" src="./divider1.svg" />
+      <DividerIcon alt="" src="/divider1.svg" />
     </TopAttraRoot>
   );
 };

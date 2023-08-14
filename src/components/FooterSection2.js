@@ -84,8 +84,8 @@ const VectorParentRoot = styled.div`
 const FooterSection2 = ({ dimensionCode, propLeft }) => {
   return (
     <VectorParentRoot propLeft={propLeft}>
-      <FrameChild alt="" src="./rectangle-322.svg" />
-      <FrameItem alt="" src="./rectangle-325.svg" />
+      <FrameChild alt="" src="/rectangle-322.svg" />
+      <FrameItem alt="" src="/rectangle-325.svg" />
       <GiulioBaccoAugust30Container>
         <GiulioBacco>Giulio Bacco</GiulioBacco>
         <August302020>

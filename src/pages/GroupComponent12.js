@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import Hotel from "./Hotel"
 const GroupChild = styled.div`
   position: absolute;
   top: 11.56rem;
@@ -40,6 +40,7 @@ const GroupComponent12 = () => {
     <RectangleParentRoot>
       <GroupChild />
       <Search>Plan your trip</Search>
+<Hotel/>
       <Mattanza2Icon alt="" src="/mattanza-2@2x.png" />
     </RectangleParentRoot>
   );
