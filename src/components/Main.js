@@ -6,6 +6,7 @@ import OtherInterestingArticles from "./OtherInterestingArticles"
 import TopAttra from "./TopAttra"
 import Footer from "./Footer"
 const Columns = styled.div`
+margin-top: 6rem;
    display:flex;
    gap:15px;
    `
@@ -19,8 +20,7 @@ const Main = () => {
         <RightSide />
       </Columns>
       <OtherInterestingArticles />
-
-      <TopAttra/>
+      <TopAttra />
       <Footer />
     </>
   )
