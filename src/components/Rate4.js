@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const DidntGetIt = styled.b`
@@ -21,12 +22,12 @@ const Rate4Root = styled.div`
   color: var(--color-black);
   font-family: var(--font-lato);
 `;
-const Rate4 = () => {
+const Rate41 = memo(() => {
   return (
     <Rate4Root>
       <DidntGetIt>Didn’t get it</DidntGetIt>
     </Rate4Root>
   );
-};
+});
 
-export default Rate4;
+export default Rate41;

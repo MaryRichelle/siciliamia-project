@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const DidYouKnowRoot = styled.div`
@@ -12,8 +13,8 @@ const DidYouKnowRoot = styled.div`
   width: 163px;
   height: 14px;
 `;
-const DidYouKnow = () => {
+const DidYouKnow1 = memo(() => {
   return <DidYouKnowRoot>Did you know?</DidYouKnowRoot>;
-};
+});
 
-export default DidYouKnow;
+export default DidYouKnow1;

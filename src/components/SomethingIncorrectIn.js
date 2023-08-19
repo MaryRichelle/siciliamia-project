@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const SomethingIncorrectInRoot = styled.div`
@@ -12,12 +13,12 @@ const SomethingIncorrectInRoot = styled.div`
   width: 284px;
   height: 11px;
 `;
-const SomethingIncorrectIn = () => {
+const SomethingIncorrectIn = memo(() => {
   return (
     <SomethingIncorrectInRoot>
       Something incorrect in this review?
     </SomethingIncorrectInRoot>
   );
-};
+});
 
 export default SomethingIncorrectIn;

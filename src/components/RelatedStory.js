@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const RelatedStoryRoot = styled.div`
@@ -13,8 +14,8 @@ const RelatedStoryRoot = styled.div`
   width: 163px;
   height: 14px;
 `;
-const RelatedStory = () => {
+const RelatedStoryText = memo(() => {
   return <RelatedStoryRoot>Related story</RelatedStoryRoot>;
-};
+});
 
-export default RelatedStory;
+export default RelatedStoryText;

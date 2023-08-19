@@ -1,6 +1,7 @@
+import { memo } from "react";
 import styled from "styled-components";
 
-const LoremIpsumDolor4 = styled.div`
+const LoremIpsumDolor5 = styled.div`
   position: absolute;
   width: 100%;
   top: calc(50% - 28px);
@@ -206,16 +207,16 @@ const FooterRoot = styled.div`
   color: var(--color-gray-200);
   font-family: var(--font-dm-sans);
 `;
-const Footer = () => {
+const Footer = memo(() => {
   return (
     <FooterRoot>
       <LogoAbout>
-        <LoremIpsumDolor4>
+        <LoremIpsumDolor5>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
-        </LoremIpsumDolor4>
+        </LoremIpsumDolor5>
         <Image13Icon alt="" src="/image-131@2x.png" />
       </LogoAbout>
       <TermsConditions>{`Terms & Conditions`}</TermsConditions>
@@ -248,6 +249,6 @@ const Footer = () => {
       </FollowUs>
     </FooterRoot>
   );
-};
+});
 
 export default Footer;

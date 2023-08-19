@@ -1,46 +1,116 @@
-import styled from "styled-components";
 
-
-const RectangleDivRoot = styled.div`
-  border-radius: var(--br-5xs);
-  background-color: rgba(81, 131, 60, 0.1);
-  width: 648px;
-  height: 118px;
-  display: flex;
-  flex-direction:row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  margin: 0;
+  font-weight: 900;
 `;
-const TagsSec = styled.p`
-font-size: var(--font-size-lg);
-  line-height: 36px;
-  font-weight: 600;
-  font-family: var(--font-lato);
-  color: var(--color-black);
+const Flexible = styled.p`
+  margin: 0;
+  font-weight: 300;
 `;
-const TagsBox = styled.p`
-  padding-inline:2rem;
-  padding-block:0.3rem;
-  font-size:1em;
-  font-weight: 600;
-  font-family: var(--font-lato);
+const StartingTimeFlexible = styled.div`
+  position: absolute;
+  top: 14px;
+  left: 40px;
+  line-height: 144%;
+  display: inline-block;
+  width: 68px;
+  height: 32px;
+`;
+const Duration5To15Container = styled.div`
+  position: absolute;
+  top: 58px;
+  left: 40px;
+  line-height: 144%;
+  display: inline-block;
+  width: 106px;
+  height: 32px;
+`;
+const AvailabilityWholeYear = styled.div`
+  position: absolute;
+  top: 14px;
+  left: 166px;
+  line-height: 144%;
+  display: inline-block;
+  width: 68px;
+  height: 32px;
+`;
+const PersonalGuideYes = styled.div`
+  position: absolute;
+  top: 58px;
+  left: 166px;
+  line-height: 144%;
+  display: inline-block;
+  width: 77px;
+  height: 32px;
+`;
+const InfoIcon = styled.img`
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+`;
+const ClockIcon = styled.img`
+  position: absolute;
+  top: 66px;
+  left: 19px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+`;
+const CalendarIcon = styled.img`
+  position: absolute;
+  top: 22px;
+  left: 146px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+`;
+const UsersIcon = styled.img`
+  position: absolute;
+  top: 65px;
+  left: 146px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+`;
+const FourOptionsRoot = styled.div`
+  position: relative;
+  width: 253px;
+  height: 98px;
+  margin-top: -168px;
+  text-align: left;
+  font-size: 11.39px;
   color: var(--color-black);
-  border-radius: var(--br-8xs);
-  background-color: var(--color-chocolate-100);
-  text-align: center;
-`
-const RectangleComponent = () => {
-  return <RectangleDivRoot >
-    <TagsSec>Tags</TagsSec>
-    <TagsBox>Authentic</TagsBox>
-    <TagsBox>Low Budget </TagsBox>
-    <TagsBox>Outdoors</TagsBox>
-    <TagsBox>Spring</TagsBox>
-    <TagsBox>Connect with locals</TagsBox>
-    <TagsBox>Sailing</TagsBox>
-    <TagsBox>History</TagsBox>
-  </RectangleDivRoot>;
+  font-family: var(--font-lato);
+  margin-top: ${(p) => p.flexibleMarginTop};
+`;
+const BottomFooter ({ flexibleMarginTop }) => {
+  return (
+    <FourOptionsRoot flexibleMarginTop={flexibleMarginTop}>
+      <FourOptionsChild />
+      <StartingTimeFlexible>
+        <StartingTime>Starting time</StartingTime>
+        <Flexible>Flexible</Flexible>
+      </StartingTimeFlexible>
+      <Duration5To15Container>
+        <StartingTime>Duration</StartingTime>
+        <Flexible>5 to 15 days</Flexible>
+      </Duration5To15Container>
+      <AvailabilityWholeYear>
+        <StartingTime>Availability</StartingTime>
+        <Flexible>Whole year</Flexible>
+      </AvailabilityWholeYear>
+      <PersonalGuideYes>
+        <StartingTime>Personal Guide</StartingTime>
+        <Flexible>Yes</Flexible>
+      </PersonalGuideYes>
+      <InfoIcon alt="" src="/info.svg" />
+      <ClockIcon alt="" src="/clock.svg" />
+      <CalendarIcon alt="" src="/calendar.svg" />
+      <UsersIcon alt="" src="/users.svg" />
+    </FourOptionsRoot>
+  );
 };
 
-export default RectangleComponent;
+export default BottomFooter;

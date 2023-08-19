@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const SeeAlso = styled.span``;
@@ -20,7 +21,7 @@ const SeeAlsoDiscoveringContainerRoot = styled.div`
   height: 15px;
   color: var(--color-black);
 `;
-const SeeAlsoDiscoveringContainer = () => {
+const SeeAlsoDiscovering = memo(() => {
   return (
     <SeeAlsoDiscoveringContainerRoot>
       <SeeAlsoDiscoveringContainer1>
@@ -29,6 +30,6 @@ const SeeAlsoDiscoveringContainer = () => {
       </SeeAlsoDiscoveringContainer1>
     </SeeAlsoDiscoveringContainerRoot>
   );
-};
+});
 
-export default SeeAlsoDiscoveringContainer;
+export default SeeAlsoDiscovering;

@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const SeeMoreRoot = styled.div`
@@ -12,8 +13,8 @@ const SeeMoreRoot = styled.div`
   width: 304px;
   height: 14px;
 `;
-const SeeMore = () => {
+const SeeMoreText = memo(() => {
   return <SeeMoreRoot>See more...</SeeMoreRoot>;
-};
+});
 
-export default SeeMore;
+export default SeeMoreText;

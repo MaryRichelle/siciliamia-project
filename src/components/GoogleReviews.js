@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const GoogleReviewsRoot = styled.div`
@@ -12,8 +13,8 @@ const GoogleReviewsRoot = styled.div`
   width: 205px;
   height: 13px;
 `;
-const GoogleReviews = () => {
+const GoogleReviewsText = memo(() => {
   return <GoogleReviewsRoot>Google reviews</GoogleReviewsRoot>;
-};
+});
 
-export default GoogleReviews;
+export default GoogleReviewsText;

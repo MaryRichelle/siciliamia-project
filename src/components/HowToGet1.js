@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const HowToGetRoot = styled.div`
@@ -12,8 +13,8 @@ const HowToGetRoot = styled.div`
   width: 163px;
   height: 14px;
 `;
-const HowToGet1 = () => {
+const HowToGet = memo(() => {
   return <HowToGetRoot>How to get there</HowToGetRoot>;
-};
+});
 
-export default HowToGet1;
+export default HowToGet;

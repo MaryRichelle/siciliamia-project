@@ -1,105 +1,128 @@
+
 import styled from "styled-components";
 
-const FrameChild = styled.img`
+const FourOptionsChild = styled.div`
   position: absolute;
-  top: 0px;
-  left: 0px;
-  border-radius: var(--br-5xs);
-  width: 220px;
-  height: 125px;
+  top: 6.13px;
+  left: 6px;
+  border-radius: var(--br-smi);
+  background-color: var(--color-navajowhite);
+  width: 247px;
+  height: 92px;
 `;
-const FrameItem = styled.img`
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  border-radius: var(--br-5xs);
-  width: 260px;
-  height: 165px;
-`;
-const GiulioBacco = styled.p`
+const StartingTime = styled.p`
   margin: 0;
   font-weight: 900;
 `;
-const August3020202 = styled.span``;
-const August3020201 = styled.span`
+const Flexible = styled.p`
+  margin: 0;
   font-weight: 300;
 `;
-const August302020 = styled.p`
-  margin: 0;
-  font-size: var(--font-size-5xs);
-`;
-const GiulioBaccoAugust30Container = styled.div`
+const StartingTimeFlexible = styled.div`
   position: absolute;
-  top: 16.5px;
-  left: 50px;
+  top: 14px;
+  left: 40px;
   line-height: 144%;
   display: inline-block;
-  width: 88px;
+  width: 68px;
   height: 32px;
 `;
-const LoremIpsumDolor4 = styled.div`
+const Duration5To15Container = styled.div`
   position: absolute;
-  top: 73.5px;
-  left: 16px;
-  line-height: 13px;
-  font-weight: 300;
+  top: 58px;
+  left: 40px;
+  line-height: 144%;
   display: inline-block;
-  width: 169px;
-  height: 36px;
+  width: 106px;
+  height: 32px;
 `;
-const IntersectIcon = styled.img`
+const AvailabilityWholeYear = styled.div`
+  position: absolute;
+  top: 14px;
+  left: 166px;
+  line-height: 144%;
+  display: inline-block;
+  width: 68px;
+  height: 32px;
+`;
+const PersonalGuideYes = styled.div`
+  position: absolute;
+  top: 58px;
+  left: 166px;
+  line-height: 144%;
+  display: inline-block;
+  width: 77px;
+  height: 32px;
+`;
+const InfoIcon = styled.img`
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+`;
+const ClockIcon = styled.img`
+  position: absolute;
+  top: 66px;
+  left: 19px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+`;
+const CalendarIcon = styled.img`
+  position: absolute;
+  top: 22px;
+  left: 146px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+`;
+const UsersIcon = styled.img`
+  position: absolute;
+  top: 65px;
+  left: 146px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+`;
+const FourOptionsRoot = styled.div`
   position: relative;
-  width: 27px;
-  height: 27px;
-  mix-blend-mode: normal;
-`;
-const FrameInner = styled.div`
-  position: absolute;
-  top: 73.5px;
-  left: 201px;
-  background-color: var(--color-gainsboro);
-  width: 3px;
-  height: 36px;
-`;
-const RectangleDiv = styled.div`
-  position: absolute;
-  top: 73.5px;
-  left: 201px;
-  background-color: var(--color-darkgray);
-  width: 3px;
-  height: 10px;
-`;
-const VectorParentRoot = styled.div`
-  position: absolute;
-  top: 0px;
-  left: 25px;
-  width: 220px;
-  height: 125px;
+  width: 253px;
+  height: 98px;
+  margin-top: -168px;
   text-align: left;
-  font-size: var(--font-size-3xs);
+  font-size: 11.39px;
   color: var(--color-black);
   font-family: var(--font-lato);
-  left: ${(p) => p.propLeft};
+  margin-top: ${(p) => p.flexibleMarginTop};
 `;
-const FooterSection2 = ({ dimensionCode, propLeft }) => {
+const BottomFooter ({ flexibleMarginTop }) => {
   return (
-    <VectorParentRoot propLeft={propLeft}>
-      <FrameChild alt="" src="/rectangle-322.svg" />
-      <FrameItem alt="" src="/rectangle-325.svg" />
-      <GiulioBaccoAugust30Container>
-        <GiulioBacco>Giulio Bacco</GiulioBacco>
-        <August302020>
-          <August3020201>
-            <August3020202>August 30, 2020.</August3020202>
-          </August3020201>
-        </August302020>
-      </GiulioBaccoAugust30Container>
-      <LoremIpsumDolor4>{`Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut. `}</LoremIpsumDolor4>
-      <IntersectIcon alt="" src={dimensionCode} />
-      <FrameInner />
-      <RectangleDiv />
-    </VectorParentRoot>
+    <FourOptionsRoot flexibleMarginTop={flexibleMarginTop}>
+      <FourOptionsChild />
+      <StartingTimeFlexible>
+        <StartingTime>Starting time</StartingTime>
+        <Flexible>Flexible</Flexible>
+      </StartingTimeFlexible>
+      <Duration5To15Container>
+        <StartingTime>Duration</StartingTime>
+        <Flexible>5 to 15 days</Flexible>
+      </Duration5To15Container>
+      <AvailabilityWholeYear>
+        <StartingTime>Availability</StartingTime>
+        <Flexible>Whole year</Flexible>
+      </AvailabilityWholeYear>
+      <PersonalGuideYes>
+        <StartingTime>Personal Guide</StartingTime>
+        <Flexible>Yes</Flexible>
+      </PersonalGuideYes>
+      <InfoIcon alt="" src="/info.svg" />
+      <ClockIcon alt="" src="/clock.svg" />
+      <CalendarIcon alt="" src="/calendar.svg" />
+      <UsersIcon alt="" src="/users.svg" />
+    </FourOptionsRoot>
   );
 };
 
-export default FooterSection2;
+export default BottomFooter;

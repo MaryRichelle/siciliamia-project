@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const LineDivRoot = styled.div`
@@ -7,8 +8,8 @@ const LineDivRoot = styled.div`
   width: 694.5px;
   height: 0.5px;
 `;
-const LineComponent7 = () => {
+const Line = memo(() => {
   return <LineDivRoot />;
-};
+});
 
-export default LineComponent7;
+export default Line;

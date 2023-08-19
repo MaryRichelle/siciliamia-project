@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const QuickFactsRoot = styled.div`
@@ -12,8 +13,8 @@ const QuickFactsRoot = styled.div`
   width: 205px;
   height: 13px;
 `;
-const QuickFacts1 = () => {
+const QuickFactsText = memo(() => {
   return <QuickFactsRoot>Quick facts</QuickFactsRoot>;
-};
+});
 
-export default QuickFacts1;
+export default QuickFactsText;

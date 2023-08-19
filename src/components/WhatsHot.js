@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const WhatsHotRoot = styled.div`
@@ -12,8 +13,8 @@ const WhatsHotRoot = styled.div`
   width: 163px;
   height: 14px;
 `;
-const WhatsHot = () => {
+const WhatsHotText1 = memo(() => {
   return <WhatsHotRoot>What’s hot</WhatsHotRoot>;
-};
+});
 
-export default WhatsHot;
+export default WhatsHotText1;

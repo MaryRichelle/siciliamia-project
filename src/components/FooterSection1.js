@@ -1,142 +1,128 @@
+
 import styled from "styled-components";
 
-const FrameChild = styled.img`
+const FourOptionsChild = styled.div`
   position: absolute;
-  top: 0rem;
-  left: 0rem;
-  border-radius: var(--br-5xs);
-  width: 13.75rem;
-  height: 7.81rem;
+  top: 6.13px;
+  left: 6px;
+  border-radius: var(--br-smi);
+  background-color: var(--color-navajowhite);
+  width: 247px;
+  height: 92px;
 `;
-const NinaHanderson = styled.p`
+const StartingTime = styled.p`
   margin: 0;
   font-weight: 900;
-  accent-color: ${(p) => p.ninaHandersonAccentColor};
 `;
-const August3020202 = styled.span``;
-const August3020201 = styled.span`
+const Flexible = styled.p`
+  margin: 0;
   font-weight: 300;
 `;
-const August302020 = styled.p`
-  margin: 0;
-  font-size: var(--font-size-5xs);
-`;
-const NinaHandersonAugust30Container = styled.div`
+const StartingTimeFlexible = styled.div`
   position: absolute;
-  top: 1.03rem;
-  left: 3.13rem;
+  top: 14px;
+  left: 40px;
   line-height: 144%;
   display: inline-block;
-  width: 5.5rem;
-  height: 2rem;
+  width: 68px;
+  height: 32px;
 `;
-const LoremIpsumDolor4 = styled.div`
+const Duration5To15Container = styled.div`
   position: absolute;
-  top: 4.59rem;
-  left: 1rem;
-  line-height: 0.81rem;
-  font-weight: 300;
+  top: 58px;
+  left: 40px;
+  line-height: 144%;
   display: inline-block;
-  width: 10.56rem;
-  height: 2.25rem;
+  width: 106px;
+  height: 32px;
 `;
-const FrameInner = styled.img`
+const AvailabilityWholeYear = styled.div`
   position: absolute;
-  top: 3.53rem;
-  left: 1rem;
-  width: 0.75rem;
-  height: 0.75rem;
+  top: 14px;
+  left: 166px;
+  line-height: 144%;
+  display: inline-block;
+  width: 68px;
+  height: 32px;
 `;
-const GroupIcon = styled.img`
+const PersonalGuideYes = styled.div`
   position: absolute;
-  top: 3.53rem;
-  left: 1.76rem;
-  width: 0.75rem;
-  height: 0.75rem;
+  top: 58px;
+  left: 166px;
+  line-height: 144%;
+  display: inline-block;
+  width: 77px;
+  height: 32px;
 `;
-const FrameChild1 = styled.img`
+const InfoIcon = styled.img`
   position: absolute;
-  top: 3.53rem;
-  left: 2.51rem;
-  width: 0.75rem;
-  height: 0.75rem;
+  top: 22px;
+  left: 20px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
 `;
-const FrameChild2 = styled.img`
+const ClockIcon = styled.img`
   position: absolute;
-  top: 3.53rem;
-  left: 3.27rem;
-  width: 0.75rem;
-  height: 0.75rem;
+  top: 66px;
+  left: 19px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
 `;
-const FrameChild3 = styled.img`
+const CalendarIcon = styled.img`
   position: absolute;
-  top: 3.53rem;
-  left: 4.03rem;
-  width: 0.75rem;
-  height: 0.75rem;
+  top: 22px;
+  left: 146px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
 `;
-const RectangleDiv = styled.div`
+const UsersIcon = styled.img`
   position: absolute;
-  top: 4.59rem;
-  left: 12.56rem;
-  background-color: var(--color-gainsboro);
-  width: 0.19rem;
-  height: 2.25rem;
+  top: 65px;
+  left: 146px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
 `;
-const FrameChild4 = styled.div`
-  position: absolute;
-  top: 4.59rem;
-  left: 12.56rem;
-  background-color: var(--color-darkgray);
-  width: 0.19rem;
-  height: 0.63rem;
-`;
-const VectorParentRoot = styled.div`
-  position: absolute;
-  top: 0rem;
-  left: 16.31rem;
-  width: 13.75rem;
-  height: 7.81rem;
+const FourOptionsRoot = styled.div`
+  position: relative;
+  width: 253px;
+  height: 98px;
+  margin-top: -168px;
   text-align: left;
-  font-size: var(--font-size-3xs);
+  font-size: 11.39px;
   color: var(--color-black);
   font-family: var(--font-lato);
-  left: ${(p) => p.propLeft};
+  margin-top: ${(p) => p.flexibleMarginTop};
 `;
-const FooterSection = ({
-  ninaHanderson,
-  propLeft,
-  showNinaHanderson = true,
-  ninaHandersonAccentColor,
-}) => {
-
-
+const BottomFooter ({ flexibleMarginTop }) => {
   return (
-    <VectorParentRoot propLeft={propLeft}>
-      <FrameChild alt="" src="/rectangle-322.svg" />
-      <FrameChild alt="" src="/rectangle-322.svg" />
-      <NinaHandersonAugust30Container>
-        {showNinaHanderson && (
-          <NinaHanderson ninaHandersonAccentColor={ninaHandersonAccentColor}>
-            {ninaHanderson}
-          </NinaHanderson>
-        )}
-        <August302020>
-          <August3020201>
-            <August3020202>August 30, 2020.</August3020202>
-          </August3020201>
-        </August302020>
-      </NinaHandersonAugust30Container>
-      <LoremIpsumDolor4>{`Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut. `}</LoremIpsumDolor4>
-      <FrameInner alt="" src="/group-477.svg" />
-      <GroupIcon alt="" src="/group-478.svg" />
-      <FrameChild1 alt="" src="/group-479.svg" />
-      <FrameChild2 alt="" src="/group-480.svg" />
-      <FrameChild3 alt="" src="/group-481.svg" />
-      <RectangleDiv />
-      <FrameChild4 />
-    </VectorParentRoot>
+    <FourOptionsRoot flexibleMarginTop={flexibleMarginTop}>
+      <FourOptionsChild />
+      <StartingTimeFlexible>
+        <StartingTime>Starting time</StartingTime>
+        <Flexible>Flexible</Flexible>
+      </StartingTimeFlexible>
+      <Duration5To15Container>
+        <StartingTime>Duration</StartingTime>
+        <Flexible>5 to 15 days</Flexible>
+      </Duration5To15Container>
+      <AvailabilityWholeYear>
+        <StartingTime>Availability</StartingTime>
+        <Flexible>Whole year</Flexible>
+      </AvailabilityWholeYear>
+      <PersonalGuideYes>
+        <StartingTime>Personal Guide</StartingTime>
+        <Flexible>Yes</Flexible>
+      </PersonalGuideYes>
+      <InfoIcon alt="" src="/info.svg" />
+      <ClockIcon alt="" src="/clock.svg" />
+      <CalendarIcon alt="" src="/calendar.svg" />
+      <UsersIcon alt="" src="/users.svg" />
+    </FourOptionsRoot>
   );
 };
 
-export default FooterSection;
+export default BottomFooter;

@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const TagsRoot = styled.div`
@@ -13,8 +14,8 @@ const TagsRoot = styled.div`
   width: 93px;
   height: 14px;
 `;
-const Tags = () => {
+const TagsText = memo(() => {
   return <TagsRoot>Tags</TagsRoot>;
-};
+});
 
-export default Tags;
+export default TagsText;

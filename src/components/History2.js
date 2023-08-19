@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const HistoryRoot = styled.div`
@@ -12,8 +13,8 @@ const HistoryRoot = styled.div`
   width: 279px;
   height: 50px;
 `;
-const History2 = () => {
+const HistoryText = memo(() => {
   return <HistoryRoot>History</HistoryRoot>;
-};
+});
 
-export default History2;
+export default HistoryText;

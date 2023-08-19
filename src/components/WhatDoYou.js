@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const WhatDoYouRoot = styled.div`
@@ -12,8 +13,8 @@ const WhatDoYouRoot = styled.div`
   width: 581px;
   height: 50px;
 `;
-const WhatDoYou = () => {
+const WhatDoYou = memo(() => {
   return <WhatDoYouRoot>What do you think about the article?</WhatDoYouRoot>;
-};
+});
 
 export default WhatDoYou;

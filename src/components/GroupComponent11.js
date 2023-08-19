@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const ViewAll = styled.div`
@@ -27,13 +28,13 @@ const ViewAllParentRoot = styled.div`
   color: var(--color-chocolate-100);
   font-family: var(--font-lato);
 `;
-const GroupComponent11 = () => {
+const Group2 = memo(() => {
   return (
     <ViewAllParentRoot>
       <ViewAll>View all</ViewAll>
       <ClarityangleLineIcon alt="" src="/clarityangleline4.svg" />
     </ViewAllParentRoot>
   );
-};
+});
 
-export default GroupComponent11;
+export default Group2;

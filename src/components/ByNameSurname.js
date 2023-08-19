@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const ByNameSurnameRoot = styled.div`
@@ -13,8 +14,8 @@ const ByNameSurnameRoot = styled.div`
   width: 193px;
   height: 15px;
 `;
-const ByNameSurname = () => {
+const ByNameSurname = memo(() => {
   return <ByNameSurnameRoot>By Name Surname</ByNameSurnameRoot>;
-};
+});
 
 export default ByNameSurname;

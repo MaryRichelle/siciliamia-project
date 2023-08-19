@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const TopAttractionIn = styled.b`
@@ -24,7 +25,7 @@ const LosAngeles = styled.b`
   flex-shrink: 0;
   text-shadow: 0px 4.172674655914307px 10.43px rgba(0, 0, 0, 0.3);
 `;
-const Deal = styled.div`
+const Deal1 = styled.div`
   position: absolute;
   top: 99px;
   left: 4.41px;
@@ -88,7 +89,7 @@ const LosAngeles1 = styled.b`
   flex-shrink: 0;
   text-shadow: 0px 4.172674655914307px 10.43px rgba(0, 0, 0, 0.3);
 `;
-const Deal1 = styled.div`
+const Deal11 = styled.div`
   position: absolute;
   top: 99px;
   left: 255px;
@@ -231,21 +232,21 @@ const TopAttraRoot = styled.div`
   color: var(--color-white);
   font-family: var(--font-lato);
 `;
-const TopAttra = () => {
+const TopAttra = memo(() => {
   return (
     <TopAttraRoot>
       <TopAttractionIn>Top Attraction in Sicily</TopAttractionIn>
-      <Deal>
+      <Deal1>
         <LosAngeles>Mount Etna</LosAngeles>
-      </Deal>
+      </Deal1>
       <VectorParent>
         <VectorIcon alt="" src="/vector5.svg" />
         <FrameChild />
         <StartingTomorrow>Starting tomorrow</StartingTomorrow>
       </VectorParent>
-      <Deal1>
+      <Deal11>
         <LosAngeles1>The Cathedral of Monreale</LosAngeles1>
-      </Deal1>
+      </Deal11>
       <Deal2>
         <LosAngeles2>The Valley of Temples in Agrigento</LosAngeles2>
       </Deal2>
@@ -264,6 +265,6 @@ const TopAttra = () => {
       <DividerIcon alt="" src="/divider1.svg" />
     </TopAttraRoot>
   );
-};
+});
 
 export default TopAttra;

@@ -97,7 +97,7 @@ const FourOptionsRoot = styled.div`
   font-family: var(--font-lato);
   margin-top: ${(p) => p.flexibleMarginTop};
 `;
-const BottomFooter = ({ flexibleMarginTop }) => {
+const BottomFooter = memo(({ flexibleMarginTop }) => {
   return (
     <FourOptionsRoot flexibleMarginTop={flexibleMarginTop}>
       <FourOptionsChild />
@@ -123,6 +123,6 @@ const BottomFooter = ({ flexibleMarginTop }) => {
       <UsersIcon alt="" src="/users.svg" />
     </FourOptionsRoot>
   );
-};
+});
 
 export default BottomFooter;

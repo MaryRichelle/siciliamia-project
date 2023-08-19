@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const SuggestAnEditRoot = styled.div`
@@ -12,8 +13,8 @@ const SuggestAnEditRoot = styled.div`
   width: 284px;
   height: 11px;
 `;
-const SuggestAnEdit = () => {
+const SuggestAnEdit = memo(() => {
   return <SuggestAnEditRoot>Suggest an edit!</SuggestAnEditRoot>;
-};
+});
 
 export default SuggestAnEdit;

@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const IllustrationsLikeTheseRoot = styled.div`
@@ -11,12 +12,12 @@ const IllustrationsLikeTheseRoot = styled.div`
   width: 479px;
   height: 98px;
 `;
-const IllustrationsLikeThese = () => {
+const IllustrationsLikeThese = memo(() => {
   return (
     <IllustrationsLikeTheseRoot>
       Illustrations like these
     </IllustrationsLikeTheseRoot>
   );
-};
+});
 
 export default IllustrationsLikeThese;

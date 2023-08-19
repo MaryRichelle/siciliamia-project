@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const RectangleDivRoot = styled.div`
@@ -7,8 +8,8 @@ const RectangleDivRoot = styled.div`
   width: 1440px;
   height: 75px;
 `;
-const RectangleComponent1 = () => {
+const Rectangle1 = memo(() => {
   return <RectangleDivRoot />;
-};
+});
 
-export default RectangleComponent1;
+export default Rectangle1;

@@ -1,6 +1,7 @@
+import { memo } from "react";
 import styled from "styled-components";
 
-const LoremIpsumDolor4 = styled.span``;
+const LoremIpsumDolor5 = styled.span``;
 const Excepteur = styled.span`
   color: var(--color-chocolate-100);
 `;
@@ -26,24 +27,24 @@ const LoremIpsumDolorContainerRoot = styled.div`
   height: 455px;
   color: var(--color-black);
 `;
-const LoremIpsumDolorContainer = () => {
+const LoremIpsumDolor2 = memo(() => {
   return (
     <LoremIpsumDolorContainerRoot>
       <LoremIpsumDolorContainer1>
         <LoremIpsumDolorSitAmetCo>
-          <LoremIpsumDolor4>{`Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. `}</LoremIpsumDolor4>
+          <LoremIpsumDolor5>{`Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. `}</LoremIpsumDolor5>
           <Excepteur>Excepteur</Excepteur>
-          <LoremIpsumDolor4>{` sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. `}</LoremIpsumDolor4>
+          <LoremIpsumDolor5>{` sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. `}</LoremIpsumDolor5>
         </LoremIpsumDolorSitAmetCo>
         <LoremIpsumDolorSitAmetCo>&nbsp;</LoremIpsumDolorSitAmetCo>
         <LoremIpsumDolorSitAmetCo>
-          <LoremIpsumDolor4>{`Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam `}</LoremIpsumDolor4>
+          <LoremIpsumDolor5>{`Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam `}</LoremIpsumDolor5>
           <Excepteur>corporis suscipit</Excepteur>
           <LaboriosamNisiUt>{` laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. `}</LaboriosamNisiUt>
         </LoremIpsumDolorSitAmetCo>
       </LoremIpsumDolorContainer1>
     </LoremIpsumDolorContainerRoot>
   );
-};
+});
 
-export default LoremIpsumDolorContainer;
+export default LoremIpsumDolor2;

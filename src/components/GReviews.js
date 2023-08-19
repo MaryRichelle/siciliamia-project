@@ -1,7 +1,8 @@
+import { memo } from "react";
 import styled from "styled-components";
 import FooterSection2 from "./FooterSection2";
 
-const GoogleReviews1 = styled.div`
+const GoogleReviews = styled.div`
   position: absolute;
   top: 0px;
   left: 30px;
@@ -64,7 +65,7 @@ const GiulioBaccoAugust30Container = styled.div`
   width: 88px;
   height: 32px;
 `;
-const LoremIpsumDolor4 = styled.div`
+const LoremIpsumDolor5 = styled.div`
   position: absolute;
   top: 73.5px;
   left: 16px;
@@ -336,10 +337,10 @@ const GReviewsRoot = styled.div`
   color: var(--color-chocolate-100);
   font-family: var(--font-lato);
 `;
-const GReviews = () => {
+const GReviews = memo(() => {
   return (
     <GReviewsRoot>
-      <GoogleReviews1>Google reviews</GoogleReviews1>
+      <GoogleReviews>Google reviews</GoogleReviews>
       <ClarityangleLineParent>
         <ClarityangleLineIcon alt="" src="/clarityangleline.svg" />
         <ClarityangleLineIcon1 alt="" src="/clarityangleline1.svg" />
@@ -357,7 +358,7 @@ const GReviews = () => {
               </August3020201>
             </August302020>
           </GiulioBaccoAugust30Container>
-          <LoremIpsumDolor4>{`Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut. `}</LoremIpsumDolor4>
+          <LoremIpsumDolor5>{`Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut. `}</LoremIpsumDolor5>
           <FrameInner />
           <RectangleDiv />
         </VectorParent>
@@ -384,6 +385,6 @@ const GReviews = () => {
       <GReviewsInner alt="" src="/group-487.svg" />
     </GReviewsRoot>
   );
-};
+});
 
 export default GReviews;

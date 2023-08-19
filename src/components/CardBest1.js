@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 import BottomFooter from "./BottomFooter";
 
@@ -139,7 +140,7 @@ const CardBestRoot = styled.div`
   color: var(--color-chocolate-100);
   font-family: var(--font-lato);
 `;
-const CardBest1 = () => {
+const CardBest2 = memo(() => {
   return (
     <CardBestRoot>
       <Hotel1>
@@ -163,6 +164,6 @@ const CardBest1 = () => {
       </Review>
     </CardBestRoot>
   );
-};
+});
 
-export default CardBest1;
+export default CardBest2;

@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const VectorIcon = styled.img`
@@ -92,7 +93,7 @@ const VectorParent = styled.div`
   width: 1078px;
   height: 27px;
 `;
-const Rectangle = styled.div`
+const Rectangle3 = styled.div`
   position: absolute;
   top: 58px;
   left: 241px;
@@ -103,7 +104,7 @@ const Rectangle = styled.div`
   transform-origin: 0 0;
   opacity: 0.5;
 `;
-const Rectangle1 = styled.div`
+const Rectangle11 = styled.div`
   position: absolute;
   top: 58px;
   left: 420px;
@@ -114,7 +115,7 @@ const Rectangle1 = styled.div`
   transform-origin: 0 0;
   opacity: 0.5;
 `;
-const Rectangle2 = styled.div`
+const Rectangle21 = styled.div`
   position: absolute;
   top: 58px;
   left: 624px;
@@ -125,7 +126,7 @@ const Rectangle2 = styled.div`
   transform-origin: 0 0;
   opacity: 0.5;
 `;
-const Rectangle3 = styled.div`
+const Rectangle31 = styled.div`
   position: absolute;
   top: 58px;
   left: 769px;
@@ -164,7 +165,7 @@ const NavRoot = styled.div`
   color: var(--color-gray-100);
   font-family: var(--font-lato);
 `;
-const Nav = () => {
+const Nav = memo(() => {
   return (
     <NavRoot>
       <VectorParent>
@@ -180,14 +181,14 @@ const Nav = () => {
         <FrameItem alt="" src="/group-88.svg" />
         <FrameInner alt="" src="/vector-11.svg" />
       </VectorParent>
-      <Rectangle />
-      <Rectangle1 />
-      <Rectangle2 />
       <Rectangle3 />
+      <Rectangle11 />
+      <Rectangle21 />
+      <Rectangle31 />
       <Rectangle4 />
       <Image13Icon alt="" src="/image-13@2x.png" />
     </NavRoot>
   );
-};
+});
 
 export default Nav;

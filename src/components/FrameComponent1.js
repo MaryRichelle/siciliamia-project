@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const Type = styled.div`
@@ -161,7 +162,7 @@ const FrameParentRoot = styled.div`
   color: var(--color-black);
   font-family: var(--font-lato);
 `;
-const FrameComponent1 = () => {
+const Frame1 = memo(() => {
   return (
     <FrameParentRoot>
       <TypeParent>
@@ -190,6 +191,6 @@ const FrameComponent1 = () => {
       </HighSeasonParent>
     </FrameParentRoot>
   );
-};
+});
 
-export default FrameComponent1;
+export default Frame1;

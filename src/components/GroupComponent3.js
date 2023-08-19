@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const GenericTitle = styled.div`
@@ -11,7 +12,7 @@ const GenericTitle = styled.div`
   width: 163px;
   height: 14px;
 `;
-const LoremIpsumDolor4 = styled.div`
+const LoremIpsumDolor5 = styled.div`
   position: absolute;
   top: 22px;
   left: 128px;
@@ -41,14 +42,14 @@ const GenericTitleParentRoot = styled.div`
   color: var(--color-black);
   font-family: var(--font-lato);
 `;
-const GroupComponent3 = () => {
+const Group10 = memo(() => {
   return (
     <GenericTitleParentRoot>
       <GenericTitle>Generic Title</GenericTitle>
-      <LoremIpsumDolor4>{`Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut  `}</LoremIpsumDolor4>
+      <LoremIpsumDolor5>{`Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut  `}</LoremIpsumDolor5>
       <Download1Icon alt="" src="/download-1@2x.png" />
     </GenericTitleParentRoot>
   );
-};
+});
 
-export default GroupComponent3;
+export default Group10;

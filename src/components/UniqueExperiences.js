@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const UniqueExperiencesRoot = styled.div`
@@ -13,8 +14,8 @@ const UniqueExperiencesRoot = styled.div`
   width: 304px;
   height: 14px;
 `;
-const UniqueExperiences = () => {
+const UniqueExperiencesText = memo(() => {
   return <UniqueExperiencesRoot>Unique experiences</UniqueExperiencesRoot>;
-};
+});
 
-export default UniqueExperiences;
+export default UniqueExperiencesText;

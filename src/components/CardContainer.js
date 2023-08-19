@@ -1,82 +1,128 @@
+
 import styled from "styled-components";
 
-const MaskGroupIcon = styled.img`
+const FourOptionsChild = styled.div`
   position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 261px;
-  height: 332px;
-  object-fit: cover;
+  top: 6.13px;
+  left: 6px;
+  border-radius: var(--br-smi);
+  background-color: var(--color-navajowhite);
+  width: 247px;
+  height: 92px;
 `;
-const TheManyBenefits = styled.p`
+const StartingTime = styled.p`
   margin: 0;
+  font-weight: 900;
 `;
-const TheManyBenefitsContainer = styled.b`
-  position: absolute;
-  top: 54.71%;
-  left: 0%;
-  font-size: var(--font-size-lgi);
-  line-height: 30px;
-  white-space: pre-wrap;
-  mix-blend-mode: normal;
-  white-space: ${(p) => p.propWhiteSpace};
+const Flexible = styled.p`
+  margin: 0;
+  font-weight: 300;
 `;
-const HelaingHolidaysAreContainer = styled.div`
+const StartingTimeFlexible = styled.div`
   position: absolute;
-  width: 100%;
-  top: 71.08%;
-  left: 0%;
-  line-height: 26px;
-  color: var(--color-slategray);
+  top: 14px;
+  left: 40px;
+  line-height: 144%;
   display: inline-block;
-  mix-blend-mode: normal;
+  width: 68px;
+  height: 32px;
 `;
-const ReadMore = styled.div`
+const Duration5To15Container = styled.div`
   position: absolute;
-  width: 100%;
-  top: 93.72%;
-  left: 0%;
-  line-height: 28px;
-  font-weight: 600;
-  color: var(--color-darkorange-100);
+  top: 58px;
+  left: 40px;
+  line-height: 144%;
   display: inline-block;
-  mix-blend-mode: normal;
+  width: 106px;
+  height: 32px;
 `;
-const Blog01Root = styled.div`
+const AvailabilityWholeYear = styled.div`
   position: absolute;
-  top: 79px;
-  left: 302px;
-  width: 266px;
-  height: 446px;
+  top: 14px;
+  left: 166px;
+  line-height: 144%;
+  display: inline-block;
+  width: 68px;
+  height: 32px;
+`;
+const PersonalGuideYes = styled.div`
+  position: absolute;
+  top: 58px;
+  left: 166px;
+  line-height: 144%;
+  display: inline-block;
+  width: 77px;
+  height: 32px;
+`;
+const InfoIcon = styled.img`
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+`;
+const ClockIcon = styled.img`
+  position: absolute;
+  top: 66px;
+  left: 19px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+`;
+const CalendarIcon = styled.img`
+  position: absolute;
+  top: 22px;
+  left: 146px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+`;
+const UsersIcon = styled.img`
+  position: absolute;
+  top: 65px;
+  left: 146px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+`;
+const FourOptionsRoot = styled.div`
+  position: relative;
+  width: 253px;
+  height: 98px;
+  margin-top: -168px;
   text-align: left;
-  font-size: var(--font-size-mini);
+  font-size: 11.39px;
   color: var(--color-black);
   font-family: var(--font-lato);
-  left: ${(p) => p.propLeft};
+  margin-top: ${(p) => p.flexibleMarginTop};
 `;
-const CardContainer = ({
-  maskGroup,
-  theManyBenefitsOf,
-  takingAHealingHoliday,
-  propLeft,
-  propWhiteSpace,
-}) => {
+const BottomFooter ({ flexibleMarginTop }) => {
   return (
-    <Blog01Root propLeft={propLeft}>
-      <MaskGroupIcon alt="" src={maskGroup} />
-      <TheManyBenefitsContainer propWhiteSpace={propWhiteSpace}>
-        <TheManyBenefits>{theManyBenefitsOf}</TheManyBenefits>
-        <TheManyBenefits>{takingAHealingHoliday}</TheManyBenefits>
-      </TheManyBenefitsContainer>
-      <HelaingHolidaysAreContainer>
-        <TheManyBenefits>{`‘Helaing holidays’ are on the rise `}</TheManyBenefits>
-        <TheManyBenefits>
-          tohelp maximise your health and happines...
-        </TheManyBenefits>
-      </HelaingHolidaysAreContainer>
-      <ReadMore>Read more</ReadMore>
-    </Blog01Root>
+    <FourOptionsRoot flexibleMarginTop={flexibleMarginTop}>
+      <FourOptionsChild />
+      <StartingTimeFlexible>
+        <StartingTime>Starting time</StartingTime>
+        <Flexible>Flexible</Flexible>
+      </StartingTimeFlexible>
+      <Duration5To15Container>
+        <StartingTime>Duration</StartingTime>
+        <Flexible>5 to 15 days</Flexible>
+      </Duration5To15Container>
+      <AvailabilityWholeYear>
+        <StartingTime>Availability</StartingTime>
+        <Flexible>Whole year</Flexible>
+      </AvailabilityWholeYear>
+      <PersonalGuideYes>
+        <StartingTime>Personal Guide</StartingTime>
+        <Flexible>Yes</Flexible>
+      </PersonalGuideYes>
+      <InfoIcon alt="" src="/info.svg" />
+      <ClockIcon alt="" src="/clock.svg" />
+      <CalendarIcon alt="" src="/calendar.svg" />
+      <UsersIcon alt="" src="/users.svg" />
+    </FourOptionsRoot>
   );
 };
 
-export default CardContainer;
+export default BottomFooter;

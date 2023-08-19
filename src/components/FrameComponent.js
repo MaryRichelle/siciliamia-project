@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const Spring = styled.div`
@@ -24,12 +25,12 @@ const SpringParentRoot = styled.div`
   color: var(--color-white);
   font-family: var(--font-lato);
 `;
-const FrameComponent = () => {
+const Frame2 = memo(() => {
   return (
     <SpringParentRoot>
       <Spring data-scroll-to="springText">Spring</Spring>
     </SpringParentRoot>
   );
-};
+});
 
-export default FrameComponent;
+export default Frame2;

@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 import CardContainer from "./CardContainer";
 
@@ -63,7 +64,7 @@ const ReadMore = styled.div`
   display: inline-block;
   mix-blend-mode: normal;
 `;
-const Blog01 = styled.div`
+const Blog012 = styled.div`
   position: absolute;
   top: 79px;
   left: 0px;
@@ -80,14 +81,14 @@ const OtherInterestingArticlesRoot = styled.div`
   color: var(--color-black);
   font-family: var(--font-lato);
 `;
-const OtherInterestingArticles = () => {
+const OtherInterestingArticles = memo(() => {
   return (
     <OtherInterestingArticlesRoot>
       <OtherInterestingArticles1>
         Other interesting articles
       </OtherInterestingArticles1>
       <DividerIcon alt="" src="/divider.svg" />
-      <Blog01>
+      <Blog012>
         <MaskGroupIcon alt="" src="/mask-group@2x.png" />
         <WhatToDoContainer>
           <WhatToDo>{`What to do and where to go `}</WhatToDo>
@@ -95,7 +96,7 @@ const OtherInterestingArticles = () => {
         </WhatToDoContainer>
         <FindOutWhat>{`Find out what to do and where to go in Sicily. See the list of the top spots and activities. `}</FindOutWhat>
         <ReadMore>Read more</ReadMore>
-      </Blog01>
+      </Blog012>
       <CardContainer
         maskGroup="/mask-group1@2x.png"
         theManyBenefitsOf="The many benefits of  "
@@ -117,6 +118,6 @@ const OtherInterestingArticles = () => {
       />
     </OtherInterestingArticlesRoot>
   );
-};
+});
 
 export default OtherInterestingArticles;

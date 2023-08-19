@@ -1,104 +1,128 @@
+
 import styled from "styled-components";
 
-const LosAngeles = styled.b`
+const FourOptionsChild = styled.div`
   position: absolute;
-  top: 6.05rem;
-  left: 1.8rem;
-  line-height: 108%;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 9.81rem;
-  height: 2.12rem;
-  text-shadow: 0px 4.172674655914307px 10.43px rgba(0, 0, 0, 0.3);
-  top: ${(p) => p.mapPinIconTop};
+  top: 6.13px;
+  left: 6px;
+  border-radius: var(--br-smi);
+  background-color: var(--color-navajowhite);
+  width: 247px;
+  height: 92px;
 `;
-const LosAngeles1 = styled.b`
-  position: absolute;
-  top: 7.66rem;
-  left: 1.8rem;
-  font-size: var(--font-size-3xs);
-  line-height: 108%;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 9.81rem;
-  height: 2.12rem;
-  text-shadow: 0px 4.172674655914307px 10.43px rgba(0, 0, 0, 0.3);
+const StartingTime = styled.p`
+  margin: 0;
+  font-weight: 900;
 `;
-const LosAngeles2 = styled.b`
-  position: absolute;
-  top: 9.48rem;
-  left: 1.8rem;
-  font-size: var(--font-size-xs);
-  line-height: 108%;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 9.79rem;
-  height: 1.04rem;
-  text-shadow: 0px 4.172674655914307px 10.43px rgba(0, 0, 0, 0.3);
+const Flexible = styled.p`
+  margin: 0;
+  font-weight: 300;
 `;
-const MapPinIcon = styled.img`
+const StartingTimeFlexible = styled.div`
   position: absolute;
-  top: 8.13rem;
-  left: 0.86rem;
-  width: 0.94rem;
-  height: 0.94rem;
+  top: 14px;
+  left: 40px;
+  line-height: 144%;
+  display: inline-block;
+  width: 68px;
+  height: 32px;
+`;
+const Duration5To15Container = styled.div`
+  position: absolute;
+  top: 58px;
+  left: 40px;
+  line-height: 144%;
+  display: inline-block;
+  width: 106px;
+  height: 32px;
+`;
+const AvailabilityWholeYear = styled.div`
+  position: absolute;
+  top: 14px;
+  left: 166px;
+  line-height: 144%;
+  display: inline-block;
+  width: 68px;
+  height: 32px;
+`;
+const PersonalGuideYes = styled.div`
+  position: absolute;
+  top: 58px;
+  left: 166px;
+  line-height: 144%;
+  display: inline-block;
+  width: 77px;
+  height: 32px;
+`;
+const InfoIcon = styled.img`
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  width: 16px;
+  height: 16px;
   overflow: hidden;
-  left: ${(p) => p.propLeft};
 `;
-const PhoneCallIcon = styled.img`
+const ClockIcon = styled.img`
   position: absolute;
-  top: 9.59rem;
-  left: 3.16rem;
-  width: 0.94rem;
-  height: 0.94rem;
+  top: 66px;
+  left: 19px;
+  width: 16px;
+  height: 16px;
   overflow: hidden;
 `;
-const DealRoot = styled.div`position: absolute;
-  top: 38.38rem;
-  left: 15rem;
-  border-radius: 4.64px;
-  width: 13.75rem;
-  height: 14.88rem;
-  background-image: url("/deal@3x.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  text-align: center;
-  font-size: var(--font-size-3xl);
-  color: var(--color-white);
+const CalendarIcon = styled.img`
+  position: absolute;
+  top: 22px;
+  left: 146px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+`;
+const UsersIcon = styled.img`
+  position: absolute;
+  top: 65px;
+  left: 146px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+`;
+const FourOptionsRoot = styled.div`
+  position: relative;
+  width: 253px;
+  height: 98px;
+  margin-top: -168px;
+  text-align: left;
+  font-size: 11.39px;
+  color: var(--color-black);
   font-family: var(--font-lato);
-  left: ${(p) => p.losAngelesLeft}
-  background-image: ${(p) => p.losAngelesBackgroundImage}
+  margin-top: ${(p) => p.flexibleMarginTop};
 `;
-const FooterSection1 = ({
-  restaurantName,
-  address,
-  phoneNumber,
-  locationCode,
-  venueDimensions,
-  losAngelesLeft,
-  losAngelesBackgroundImage,
-  mapPinIconTop,
-  propLeft,
-}) => {
+const BottomFooter ({ flexibleMarginTop }) => {
   return (
-    <DealRoot
-      losAngelesLeft={losAngelesLeft}
-      losAngelesBackgroundImage={losAngelesBackgroundImage}
-    >
-      <LosAngeles mapPinIconTop={mapPinIconTop}>{restaurantName}</LosAngeles>
-      <LosAngeles1>{address}</LosAngeles1>
-      <LosAngeles2>{phoneNumber}</LosAngeles2>
-      <MapPinIcon alt="" src={locationCode} propLeft={propLeft} />
-      <PhoneCallIcon alt="" src={venueDimensions} />
-    </DealRoot>
+    <FourOptionsRoot flexibleMarginTop={flexibleMarginTop}>
+      <FourOptionsChild />
+      <StartingTimeFlexible>
+        <StartingTime>Starting time</StartingTime>
+        <Flexible>Flexible</Flexible>
+      </StartingTimeFlexible>
+      <Duration5To15Container>
+        <StartingTime>Duration</StartingTime>
+        <Flexible>5 to 15 days</Flexible>
+      </Duration5To15Container>
+      <AvailabilityWholeYear>
+        <StartingTime>Availability</StartingTime>
+        <Flexible>Whole year</Flexible>
+      </AvailabilityWholeYear>
+      <PersonalGuideYes>
+        <StartingTime>Personal Guide</StartingTime>
+        <Flexible>Yes</Flexible>
+      </PersonalGuideYes>
+      <InfoIcon alt="" src="/info.svg" />
+      <ClockIcon alt="" src="/clock.svg" />
+      <CalendarIcon alt="" src="/calendar.svg" />
+      <UsersIcon alt="" src="/users.svg" />
+    </FourOptionsRoot>
   );
 };
 
-export default FooterSection1;
+export default BottomFooter;

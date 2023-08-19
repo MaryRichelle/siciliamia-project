@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const PopularAttraction = styled.p`
@@ -19,7 +20,7 @@ const PopularAttractionNearbyContainerRoot = styled.div`
   width: 205px;
   height: 35px;
 `;
-const PopularAttractionNearbyContainer = () => {
+const PopularAttractionNearby = memo(() => {
   return (
     <PopularAttractionNearbyContainerRoot>
       <PopularAttractionNearbyContainer1>
@@ -28,6 +29,6 @@ const PopularAttractionNearbyContainer = () => {
       </PopularAttractionNearbyContainer1>
     </PopularAttractionNearbyContainerRoot>
   );
-};
+});
 
-export default PopularAttractionNearbyContainer;
+export default PopularAttractionNearby;

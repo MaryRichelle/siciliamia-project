@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const JumpToChapterRoot = styled.div`
@@ -13,8 +14,8 @@ const JumpToChapterRoot = styled.div`
   width: 163px;
   height: 14px;
 `;
-const JumpToChapter = () => {
+const JumpToChapter = memo(() => {
   return <JumpToChapterRoot>Jump to chapter</JumpToChapterRoot>;
-};
+});
 
 export default JumpToChapter;

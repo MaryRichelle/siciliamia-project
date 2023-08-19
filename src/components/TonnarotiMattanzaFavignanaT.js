@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const TonnarotiMattanzaFavignanaTRoot = styled.div`
@@ -10,8 +11,8 @@ const TonnarotiMattanzaFavignanaTRoot = styled.div`
   background-repeat: no-repeat;
   background-position: top;
 `;
-const TonnarotiMattanzaFavignanaT = () => {
+const TonnarotiMattanzaFavignanaT1 = memo(() => {
   return <TonnarotiMattanzaFavignanaTRoot />;
-};
+});
 
-export default TonnarotiMattanzaFavignanaT;
+export default TonnarotiMattanzaFavignanaT1;

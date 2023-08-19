@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const DivRoot = styled.div`
@@ -9,8 +10,8 @@ const DivRoot = styled.div`
   background-repeat: no-repeat;
   background-position: top;
 `;
-const Component = () => {
+const Rectangle = memo(() => {
   return <DivRoot />;
-};
+});
 
-export default Component;
+export default Rectangle;

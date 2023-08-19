@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const VectorDivRoot = styled.div`
@@ -7,8 +8,8 @@ const VectorDivRoot = styled.div`
   width: 175px;
   height: 51px;
 `;
-const VectorComponent = () => {
+const Vector = memo(() => {
   return <VectorDivRoot />;
-};
+});
 
-export default VectorComponent;
+export default Vector;
