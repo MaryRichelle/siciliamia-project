@@ -6,17 +6,17 @@ const GroupChild = styled.div`
   left: 0rem;
   border-radius: var(--br-8xs);
   background-color: var(--color-chocolate-100);
-  width: 5.19rem;
+  width: 6.94rem;
   height: 1.88rem;
 `;
-const Sailing = styled.div`
+const Authentic = styled.div`
   position: absolute;
   top: 0.5rem;
   left: 1rem;
   line-height: 2.25rem;
   display: flex;
   align-items: center;
-  width: 3.19rem;
+  width: 4.94rem;
   height: 0.88rem;
 `;
 const RectangleParentRoot = styled.div`
@@ -28,13 +28,13 @@ const RectangleParentRoot = styled.div`
   color: var(--color-white);
   font-family: var(--font-lato);
 `;
-const GroupComponent9 = () => {
+const GroupComponent10 = () => {
   return (
     <RectangleParentRoot>
       <GroupChild />
-      <Sailing>Sailing</Sailing>
+      <Authentic>Authentic</Authentic>
     </RectangleParentRoot>
   );
 };
 
-export default GroupComponent9;
+export default GroupComponent10;

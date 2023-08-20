@@ -12,16 +12,16 @@ export default createGlobalStyle`
 --font-inter: Inter;
 
 /* font sizes */
+--font-size-xs-4: 0.71rem;
+--font-size-smi-6: 0.79rem;
+--font-size-mini-1: 0.88rem;
+--font-size-3xl: 1.38rem;
 --font-size-3xs: 0.63rem;
 --font-size-5xs: 0.5rem;
 --font-size-17xl: 2.25rem;
 --font-size-mid: 1.06rem;
 --font-size-xs: 0.75rem;
---font-size-3xl: 1.38rem;
 --font-size-5xl: 1.5rem;
---font-size-xs-4: 0.71rem;
---font-size-smi-6: 0.79rem;
---font-size-mini-1: 0.88rem;
 --font-size-mini: 0.94rem;
 --font-size-lgi: 1.19rem;
 --font-size-lg: 1.13rem;
@@ -29,15 +29,15 @@ export default createGlobalStyle`
 --font-size-sm: 0.88rem;
 
 /* Colors */
+--dark-blue: #1a2b49;
+--color-white: #fff;
 --color-chocolate-100: #eb6e13;
 --color-chocolate-200: rgba(235, 110, 19, 0.5);
+--color-black: #000;
+--color-navajowhite: rgba(253, 208, 141, 0.34);
 --color-darkgray: #ababab;
 --color-gainsboro: #d8d8d8;
---color-black: #000;
 --color-darkorange-100: #fb8f1d;
---color-white: #fff;
---dark-blue: #1a2b49;
---color-navajowhite: rgba(253, 208, 141, 0.34);
 --color-slategray: #7d7987;
 --color-gray-100: #8f8f8f;
 --color-gray-200: #1e2833;
@@ -51,11 +51,11 @@ export default createGlobalStyle`
 --padding-0: 0rem;
 
 /* border radiuses */
---br-5xs: 8px;
---br-8xs-6: 4.6px;
 --br-9xs-1: 3.1px;
 --br-smi: 13px;
 --br-11xs-6: 1.6px;
+--br-5xs: 8px;
+--br-8xs-6: 4.6px;
 --br-8xs: 5px;
 
 /* Effects */

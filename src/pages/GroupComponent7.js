@@ -1,4 +1,3 @@
-import { useCallback } from "react";
 import styled from "styled-components";
 
 const GroupChild = styled.div`
@@ -7,43 +6,35 @@ const GroupChild = styled.div`
   left: 0rem;
   border-radius: var(--br-8xs);
   background-color: var(--color-chocolate-100);
-  width: 5.69rem;
+  width: 6.94rem;
   height: 1.88rem;
 `;
-const History3 = styled.div`
+const Authentic = styled.div`
   position: absolute;
   top: 0.5rem;
   left: 1rem;
   line-height: 2.25rem;
   display: flex;
   align-items: center;
-  width: 3.69rem;
+  width: 4.94rem;
   height: 0.88rem;
 `;
 const RectangleParentRoot = styled.div`
   position: relative;
   width: 100%;
   height: 1.88rem;
-  cursor: pointer;
   text-align: left;
   font-size: var(--font-size-lg);
   color: var(--color-white);
   font-family: var(--font-lato);
 `;
-const GroupComponent7 = () => {
-  const onGroupContainerClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='springText']");
-    if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-    }
-  }, []);
-
+const GroupComponent10 = () => {
   return (
-    <RectangleParentRoot onClick={onGroupContainerClick}>
+    <RectangleParentRoot>
       <GroupChild />
-      <History3>History</History3>
+      <Authentic>Authentic</Authentic>
     </RectangleParentRoot>
   );
 };
 
-export default GroupComponent7;
+export default GroupComponent10;

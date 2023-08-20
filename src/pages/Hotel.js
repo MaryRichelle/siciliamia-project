@@ -1,50 +1,40 @@
 import styled from "styled-components";
 
-const Rectangle = styled.div`
+const GroupChild = styled.div`
   position: absolute;
   top: 0rem;
   left: 0rem;
-  border-radius: 3.14px;
-  background-color: var(--color-white);
-  box-shadow: 0px 3.8931150436401367px 23.36px rgba(189, 189, 189, 0.23);
-  width: 13.38rem;
-  height: 11.06rem;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-chocolate-100);
+  width: 6.94rem;
+  height: 1.88rem;
 `;
-const FavignanaTunaFishing = styled.b`
+const Authentic = styled.div`
   position: absolute;
-  top: 6.5rem;
-  left: 1.94rem;
-  line-height: 144%;
-  display: inline-block;
-  width: 9.5rem;
-  height: 1.38rem;
+  top: 0.5rem;
+  left: 1rem;
+  line-height: 2.25rem;
+  display: flex;
+  align-items: center;
+  width: 4.94rem;
+  height: 0.88rem;
 `;
-const RectangleParent = styled.div`
-  position: absolute;
-  top: 0rem;
-  left: 0rem;
-  width: 13.38rem;
-  height: 11.06rem;
-`;
-const HotelRoot = styled.div`
+const RectangleParentRoot = styled.div`
   position: relative;
-  box-shadow: var(--shadow);
   width: 100%;
-  height: 11.06rem;
+  height: 1.88rem;
   text-align: left;
-  font-size: var(--font-size-3xl);
-  color: var(--color-chocolate-100);
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
   font-family: var(--font-lato);
 `;
-const Hotel = () => {
+const GroupComponent10 = () => {
   return (
-    <HotelRoot>
-      <RectangleParent>
-        <Rectangle />
-        <FavignanaTunaFishing>Favignana tuna fishing</FavignanaTunaFishing>
-      </RectangleParent>
-    </HotelRoot>
+    <RectangleParentRoot>
+      <GroupChild />
+      <Authentic>Authentic</Authentic>
+    </RectangleParentRoot>
   );
 };
 
-export default Hotel;
+export default GroupComponent10;

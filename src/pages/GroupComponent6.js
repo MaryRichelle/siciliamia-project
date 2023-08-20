@@ -6,17 +6,17 @@ const GroupChild = styled.div`
   left: 0rem;
   border-radius: var(--br-8xs);
   background-color: var(--color-chocolate-100);
-  width: 6.75rem;
+  width: 6.94rem;
   height: 1.88rem;
 `;
-const Outdoors = styled.div`
+const Authentic = styled.div`
   position: absolute;
   top: 0.5rem;
   left: 1rem;
   line-height: 2.25rem;
   display: flex;
   align-items: center;
-  width: 4.75rem;
+  width: 4.94rem;
   height: 0.88rem;
 `;
 const RectangleParentRoot = styled.div`
@@ -28,13 +28,13 @@ const RectangleParentRoot = styled.div`
   color: var(--color-white);
   font-family: var(--font-lato);
 `;
-const GroupComponent6 = () => {
+const GroupComponent10 = () => {
   return (
     <RectangleParentRoot>
       <GroupChild />
-      <Outdoors>Outdoors</Outdoors>
+      <Authentic>Authentic</Authentic>
     </RectangleParentRoot>
   );
 };
 
-export default GroupComponent6;
+export default GroupComponent10;
